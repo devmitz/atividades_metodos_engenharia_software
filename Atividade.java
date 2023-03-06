@@ -16,7 +16,7 @@ public class Atividade {
 				//resultados.
 				int resultado_soma = variavel_um + variavel_dois;
 				int resultado_subtracao = variavel_um - variavel_dois;
-				int resultado_divisao = variavel_um / variavel_dois;
+				double resultado_divisao = variavel_um / variavel_dois;
 				
 				//Se algum número digitado for = 0, dara a mensagem de operador invalido.
 				if (variavel_um != 0 && variavel_dois != 0) {
