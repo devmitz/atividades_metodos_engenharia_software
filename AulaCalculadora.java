@@ -1,4 +1,4 @@
-package com.mycompany.aulacalculadora;
+//package com.mycompany.aulacalculadora;
 
 import java.util.Scanner;
 
