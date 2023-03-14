@@ -1,3 +1,4 @@
+package CalculadoraProfessor;
 //package com.mycompany.aulacalculadora;
 
 import java.util.Scanner;

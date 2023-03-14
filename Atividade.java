@@ -6,7 +6,11 @@ public class Atividade {
 		String mensagemOperacao = "Digite o valor da operação \n (+) = Soma \n (-) = Subtração \n (/) = Divisão \n (*) = Multiplicação";
 		boolean continuar = true;
 		boolean operadorValido = true;
-		
+
+		//criação do Contrutor e a variavel do resultado.
+		Calcular c = new Calcular();
+		double resultado;
+	
 		while(continuar) {
 			//Começando a perguntar ao usuario os números e a operação que deseja fazer.
 			while(operadorValido) {
@@ -20,23 +24,23 @@ public class Atividade {
 
 					switch (operacao) {
 						case "+":
-							int resultadoSoma = variavelUm + variavelDois;
-							JOptionPane.showMessageDialog(null, "A soma da operação foi de : " + resultadoSoma);
+							resultado = c.Somar(variavelUm, variavelDois);
+							JOptionPane.showMessageDialog(null, "A soma da operação foi de : " + resultado);
 							break;
 						
 						case "-":
-							int resultadoSubtracao = variavelUm - variavelDois;
-							JOptionPane.showMessageDialog(null, "A subtração da operação foi de : " + resultadoSubtracao);
+							resultado = c.Subtracao(variavelUm, variavelDois);
+							JOptionPane.showMessageDialog(null, "A subtração da operação foi de : " + resultado);
 							break;
 						
 						case "/":
-							double resultadoDivisao = variavelUm / variavelDois;
-							JOptionPane.showMessageDialog(null, "A divisão da operação foi de : " + resultadoDivisao);
+							resultado = c.Divisao(variavelUm, variavelDois);
+							JOptionPane.showMessageDialog(null, "A divisão da operação foi de : " + resultado);
 							break;
 
 						case "*":
-							double resultadoMultiplicacao = variavelUm * variavelDois;
-							JOptionPane.showMessageDialog(null, "A divisão da operação foi de : " + resultadoMultiplicacao);
+							resultado = c.Multiplicacao(variavelUm, variavelDois);
+							JOptionPane.showMessageDialog(null, "A divisão da operação foi de : " + resultado);
 							break;
 
 						default:
